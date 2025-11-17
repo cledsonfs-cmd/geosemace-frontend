@@ -518,7 +518,7 @@ export default function MapaGoogle() {
       const timer = setTimeout(() => {
         setToastMessage(null);
         centralizarNasCamadas();
-      }, 3000);
+      }, 5000);
 
       return () => clearTimeout(timer);
     }
