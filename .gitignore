@@ -15,9 +15,6 @@ pnpm-debug.log*
 .vite/
 
 # Env files
-.env
-.env.local
-.env.*.local
 
 # TypeScript
 *.tsbuildinfo
