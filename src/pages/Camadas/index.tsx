@@ -136,12 +136,10 @@ const ListaCamadas: React.FC = () => {
           <Typography variant="h6" sx={styles.headerTitle}>
             Visualizar Camadas Geoespaciais
           </Typography>
-        </Box>
-        {authorization.authorization?.roles.includes("ADMIN") && (
+        </Box>        
           <Button variant="contained" sx={styles.adicionarButton} onClick={handleOpenModal}>
             Adicionar Camada
-          </Button>
-        )}
+          </Button>        
       </Box>
 
       {/* Campo de busca */}

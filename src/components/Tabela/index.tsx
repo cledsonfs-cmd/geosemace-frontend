@@ -185,11 +185,11 @@ export default function Tabela({
                     <TableCell align="center">
                       <IconButton
                         onClick={() => {
-                          if (authorization.authorization?.roles.includes("ADMIN")) {
+                          
                             setCamadaSelecionada(camada);
                             setAcaoTipo("habilitar");
                             setConfirmOpen(true);
-                          }
+                          
                         }}
                       >
                         {camada.ativo ? (
@@ -205,9 +205,9 @@ export default function Tabela({
                       <Tooltip title="Alterar cor da camada">
                         <div
                           onClick={() => {
-                            if (authorization.authorization?.roles.includes("ADMIN")) {
+                            
                               handleAbrirDialogCor(camada)
-                            }
+                            
                           }}
                           style={{
                             backgroundColor: camada.corCamada || "#cccccc",
@@ -223,7 +223,7 @@ export default function Tabela({
                     </TableCell>
 
                     <TableCell align="center">
-                      {authorization.authorization?.roles.includes("ADMIN") && (
+                      
                         <Tooltip title="Excluir camada">
                           <IconButton
                             onClick={() => {
@@ -234,8 +234,7 @@ export default function Tabela({
                           >
                             <DeleteForeverOutlinedIcon />
                           </IconButton>
-                        </Tooltip>
-                      )}
+                        </Tooltip>                      
 
                       <Tooltip title="Baixar camada">
                         <IconButton
